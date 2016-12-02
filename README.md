@@ -16,7 +16,7 @@ Testing the Feed Reader app using Javascript testing framework **Jasmine**.
 
 - Install Python .                                                                                                             
 - Navigate to the project folder using terminal  .
-- Run the command **python -m SimpleHTTPServer 8080 **.
+- Run the command **python -m SimpleHTTPServer 8080**.
 - Go to the URL **http://localhost:8080/** in browser.
 
 
