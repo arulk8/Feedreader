@@ -89,7 +89,7 @@ $(function() {
      */
     describe('Initial Entries', function() {
 
-        beforeEach(function(done) {
+        beforeEach(function(done) { //beforeEach run before the specs 
             loadFeed(0, done);
         });
         it('Atleast single entry element is found inside feed container', function(done) {
@@ -109,18 +109,18 @@ $(function() {
         var output2;
         beforeEach(function(done) {
             loadFeed(0, function() {
-                output1 = $('.header-title').html();
+                output1 = $('.header-title').html();//storing the feed title to output1
                 done();
             });
             loadFeed(1, function() {
-                otuput2 = $('.header-title').html();
+                otuput2 = $('.header-title').html();//storing the next feed title  to output2
                 done();
             });
 
         });
         it('The Contents Changed', function(done) {
 
-            expect(output1).not.toEqual(output2);
+            expect(output1).not.toEqual(output2);// checking the outputs are equal or not
             done();
         });
 
